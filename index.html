@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Princesse Sombre - Kigard</title>
+    <link href="princesse_sombre.css" rel="stylesheet">
+    <style>
+        .nav-combats {
+            background: #60482d;
+            padding: 8px 16px;
+            text-align: center;
+            font-family: serif;
+            border-bottom: 2px solid #3d2f1c;
+            width: 100%;
+            max-width: 540px;
+            box-sizing: border-box;
+            margin: 0 auto;
+        }
+        .nav-combats a {
+            color: #f2dfb1;
+            text-decoration: none;
+            padding: 6px 14px;
+            margin: 0 4px;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        .nav-combats a:hover {
+            background: #8a6a44;
+        }
+        .nav-combats a.active {
+            background: #debf85;
+            color: #3d2f1c;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav-combats">
+        <a href="https://karzeax.github.io/prince_rouge/">Prince Rouge</a>
+        <a href="https://karzeax.github.io/princesse_sombre/" class="active">Princesse Sombre</a>
+        <!-- <a href="https://karzeax.github.io/avatar_de_sang/">Avatar de Sang</a> -->
+    </nav>
+
+    <header class="tdj">
+        <div id="date"></div>
+        <div id="time"></div>
+        <div id="turn-label"></div>
+    </header>
+
+    <nav class="navigation">
+        <button id="prev-btn" title="Tour precedent" aria-label="Tour precedent">&#9664;</button>
+        <input type="range" id="turn-slider" min="0" value="0">
+        <button id="next-btn" title="Tour suivant" aria-label="Tour suivant">&#9654;</button>
+        <span id="turn-display"></span>
+    </nav>
+
+    <div id="grid" class="grid-container"></div>
+
+    <div class="historic">
+        <table>
+            <tbody id="history-table"></tbody>
+        </table>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
