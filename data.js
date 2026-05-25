@@ -911,7 +911,11 @@ const TURNS = [
     history: [
       {"time": "21h51", "text": "<img src=\"https://raw.githubusercontent.com/Ciolfire/kigard-fashion-script/main/night/Melian.gif\"> [CIC] Melian active son tour", "result": ""},
       {"time": "21h54", "text": "<img src=\"https://raw.githubusercontent.com/Ciolfire/kigard-fashion-script/main/night/Sephy.gif\"> [CIC] Sephy active son tour", "result": "+12 PV"},
-      {"time": "21h54", "text": "<img src=\"https://www.kigard.fr/images/vue/monstre/151.gif\"> Kuma active son tour", "result": ""}
+      {"time": "21h54", "text": "<img src=\"https://www.kigard.fr/images/vue/monstre/151.gif\"> Kuma active son tour", "result": ""},
+      {"time": "21h54", "text": "<img src=\"https://raw.githubusercontent.com/Ciolfire/kigard-fashion-script/main/night/Sephy.gif\"> [CIC] Sephy se défend", "result": ""},
+      {"time": "21h54", "text": "<img src=\"https://raw.githubusercontent.com/Ciolfire/kigard-fashion-script/main/night/Sephy.gif\"> [CIC] Sephy se défend", "result": ""},
+      {"time": "21h54", "text": "<img src=\"https://raw.githubusercontent.com/Ciolfire/kigard-fashion-script/main/night/Sephy.gif\"> [CIC] Sephy se défend", "result": ""},
+      {"time": "21h54", "text": "<img src=\"https://raw.githubusercontent.com/Ciolfire/kigard-fashion-script/main/night/Sephy.gif\"> [CIC] Sephy se défend", "result": ""},
     ],
   },
   {
