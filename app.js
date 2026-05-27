@@ -163,5 +163,13 @@
         if (e.key === "End") go(TURNS.length - 1);
     });
 
+    // Prevent double-tap zoom on grid (iOS Safari)
+    var lastTap = 0;
+    document.getElementById("grid").addEventListener("touchend", function (e) {
+        var now = Date.now();
+        if (now - lastTap < 300) { e.preventDefault(); }
+        lastTap = now;
+    }, { passive: false });
+
     renderTurn(0);
 })();
