@@ -3,17 +3,6 @@
 
     var currentTurn = 0;
 
-    // Anti double-tap-zoom mobile (iOS Safari)
-    var lastTouch = 0;
-    document.addEventListener("touchend", function (e) {
-        var now = Date.now();
-        if (now - lastTouch <= 300) {
-            e.preventDefault();
-        }
-        lastTouch = now;
-    }, { passive: false });
-
-
     var ROW_COORDS = [-19, -20, -21, -22, -23, -24, -25, -26, -27, -28, -29, -30, -31, -32];
     var COL_COORDS = [-127, -126, -125, -124, -123, -122, -121, -120, -119, -118, -117, -116, -115, -114];
 
@@ -164,6 +153,8 @@
     });
     prevBtn.addEventListener("click", function () { go(currentTurn - 1); });
     nextBtn.addEventListener("click", function () { go(currentTurn + 1); });
+    prevBtn.addEventListener("touchstart", function (e) { if (!prevBtn.disabled) { e.preventDefault(); go(currentTurn - 1); } }, { passive: false });
+    nextBtn.addEventListener("touchstart", function (e) { if (!nextBtn.disabled) { e.preventDefault(); go(currentTurn + 1); } }, { passive: false });
 
     document.addEventListener("keydown", function (e) {
         if (e.key === "ArrowLeft") go(currentTurn - 1);
